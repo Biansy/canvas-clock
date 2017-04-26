@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
@@ -99,10 +99,10 @@
 				if (balls[i].x + RADIUS > 0 && balls[i].x - RADIUS < 1300) {
 					balls[cnt++] = balls[i];
 				}
-			}console.log("原来: "+balls.length)
+			}
 			while (balls.length > cnt || balls.length > 400) {
 				balls.pop();
-			}console.log("之后: "+balls.length)
+			}
 		}
 
 		function addBalls(x, y, num) {
