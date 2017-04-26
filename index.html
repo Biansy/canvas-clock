@@ -99,11 +99,10 @@
 				if (balls[i].x + RADIUS > 0 && balls[i].x - RADIUS < 1300) {
 					balls[cnt++] = balls[i];
 				}
-			}
-			while (balls.length > cnt) {
+			}console.log("原来: "+balls.length)
+			while (balls.length > cnt || balls.length > 400) {
 				balls.pop();
-			}
-			console.log(balls.length);
+			}console.log("之后: "+balls.length)
 		}
 
 		function addBalls(x, y, num) {
